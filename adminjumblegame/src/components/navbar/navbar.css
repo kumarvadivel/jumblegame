@@ -1,0 +1,43 @@
+.fullarea{
+    height: 10vh;
+    background: rgb(209,0,255);
+background: linear-gradient(90deg,rgba(9,9,121,1)  0%, rgba(209,0,255,1) 67%);
+}
+.logoarea{
+    padding-left: 5vw;
+   
+    width: 10vw;
+}
+.gamezone{
+    text-align: end;
+    width: 85%;
+    color: white;
+    padding: 4vh 0;
+    justify-content: center;
+}
+.navt{
+    padding-right: 4vw;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)  { 
+    .fullarea{
+        height: 8vh;
+       }
+    .logoarea{
+        padding-top: 1vh;
+        width: 25vw;
+    }
+    .gamezone{
+        padding-top: 2vh;
+    }
+    .navt{
+        padding-right: 4vw;
+        font-size: large;
+    }
+}
+
