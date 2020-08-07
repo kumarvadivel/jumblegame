@@ -1,0 +1,19 @@
+.footer__quick-link-list-wrap {
+    background-color: #8c8d94;
+    color: #fff;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.container {
+    max-width: 1200px !important;
+    width: 100%;
+    padding: 0 30px;
+}
+.container:before, .container:after {
+    display: table;
+    content: " ";
+}
+.ggh{
+    margin-left: 5vw;
+}

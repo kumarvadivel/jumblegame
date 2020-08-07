@@ -1,0 +1,25 @@
+.gamebox{
+    height:fit-content;
+    padding: 1vw;
+    margin-bottom: 1vh;
+    border:1px solid #4f06a8;
+}
+.be{
+    width: 25vw;
+}
+.head{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.kas{
+    color: #504e4e;
+}
+.loc{
+    padding-top: 3vh;
+}
+.vg{
+    margin-left: 12vw;
+    margin-top: 1vh;
+    width: 7vw;
+    border-radius: 6%;
+}

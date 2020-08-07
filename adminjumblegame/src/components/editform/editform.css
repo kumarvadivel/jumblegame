@@ -1,0 +1,23 @@
+.ku{
+    width: 45vw;
+}
+.qbox{
+    border: 1px solid #5d06b1;
+    padding: 1vh;
+    margin: 1vh 0;
+}
+
+.air{
+    width: 45%;
+}
+.gh{
+    min-width: 23vw;
+    max-width: 15vw;
+}
+.df{
+    font-size: smaller;
+    width: 5vw;
+    height: 4vh;
+    font-weight: 500;
+    border-radius: 4%;
+}

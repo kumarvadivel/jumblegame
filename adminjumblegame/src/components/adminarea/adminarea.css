@@ -1,0 +1,26 @@
+.adminarea{
+    padding: 5vw;
+}
+.optionarea{
+    padding: 1vw;
+    border:1px solid silver;
+    text-align: center;
+    height: 14vh;
+}
+.topic{
+    height: 4vh;
+    width: 6.5vw;
+    margin-left: -1vh;
+    margin-top: -11px;
+    font-size: larger;
+    position: absolute;
+    background: white;
+}
+.cus{
+    margin-right: 4vw;
+    width: 10vw;
+    margin-top: 2.5vh;
+    border-radius: 5%;
+    padding: 0 0vh;
+    font-size: small;
+}

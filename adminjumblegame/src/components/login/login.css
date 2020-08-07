@@ -1,0 +1,32 @@
+.logar{
+    background: #fdfafa;
+}
+.logarea{
+    padding: 5vh 0;
+    color:rgb(48, 42, 42);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+.sub{
+    color:rgb(126, 122, 122);
+    font-size: small;
+    padding-top: 1vh;
+}
+.oautharea{
+    border: 1px solid slategray;
+    width: 27vw;
+    margin-top: 4vh;
+    margin-left: 35vw;
+    padding: 3vh;
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)  { 
+      .logarea{
+          font-size: medium;
+      }
+      .sub{
+          font-size: x-small;
+      }
+  }

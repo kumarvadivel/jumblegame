@@ -1,0 +1,40 @@
+.crumb{
+    height: 11vh;
+    background-color: #efefef;
+    z-index: -1;
+}
+.imar{
+    padding: 2vh 0 2vh 5vw;
+}
+.ima{
+    height: 7vh;
+    border-radius: 50%;
+}
+.dataarea{
+    padding: 4vh 0 4vh 1vw;
+}
+.he{
+    font-size: larger;
+    font-weight: 500;
+    color: #17141d;
+}
+.oj{
+    color: #7d7b7b;
+    margin-top: 3px;
+    margin-left: 1vh;
+}
+.logout{
+    width: 71%;
+    text-align: end;
+    padding: 3vh 8vw 0vh 0vw;
+}
+.butt{
+    background: linear-gradient(45deg, #d100ff, #3d079c);
+    width: 6vw;
+    height: 5vh;
+    color: white;
+    border-radius: 10%;
+    font-size: medium;
+    font-weight: 600;
+    padding: 0vh;
+}

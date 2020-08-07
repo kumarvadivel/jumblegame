@@ -1,0 +1,65 @@
+.formarea{
+    border: 1px solid silver;
+    padding: 5vh 5vw;
+}
+.frarea{
+    padding: 4vw;
+}
+.uy{
+    width: 9vw;
+}
+.form1,.form2{
+    width: 50%;
+    padding: 1vw;
+}
+.inp{
+    background: white;
+    border: 1px solid #8b03d0;
+    padding: 2vh;
+    color: #17141d;
+    width: 20vw;
+}
+.title,.tit{
+    font-size: xx-large;
+}
+.err{
+    color: red;
+    font-size: small;
+    margin: 4px 0 4px 1vw;
+}
+label{
+    font-size: larger;
+    font-weight: 300;
+}
+form{
+    padding-top: 1vh;
+}
+form>div,input{
+    padding-top: 2vh;
+}
+form:last-child{
+   
+}
+input:focus{
+    border-color: blue;
+}
+.lo{
+    margin-top: 3vh;
+    width: 8vw;
+    border-radius: 5%;
+    padding: 1vh;
+    height: 7vh;
+}
+.added{
+    padding-top: 3vh;
+}
+.ans{
+    padding-left: 0.9vw;
+    padding-top: 2vh;
+}
+li{
+    padding-top: 2vh;
+}
+.ki{
+    margin-left: 5vw;
+}
