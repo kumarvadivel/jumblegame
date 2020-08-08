@@ -1,0 +1,74 @@
+.todaycard{
+    background: white;
+    height: fit-content;
+    color: black;
+    width: 85vw;
+    border-radius: 15px;
+    margin:0vw  5vw 0 5vw;
+    display: inline-block;
+    padding:  0 10px;
+}
+.card {
+    display: inline-block;
+  }
+
+
+  .gameic{
+      width: 20vw;
+  }
+  .topic{
+      position: relative;
+      margin: 3vh 10vw;
+      font-weight: 700;
+      font-size: large;
+  }
+  .imgban{
+      width: 85vw;
+      height: 30vh;
+  }
+  .startarea{
+      padding: 2vh 0;
+  }
+  .tim{
+      text-align: center;
+      background: pink;
+      border-radius: 10px;
+      box-shadow: 0px 10px 40px -16px rgba(0,0,0,0.61);
+  }
+  .playnow{
+      background-color: #fc2779;
+      border-radius: 10px;
+      padding: 15px;
+      color: white;
+      font-weight: bolder;
+      font-size: medium;
+  }
+  .vg{
+      padding: 3px 0;
+      font-weight: 600;
+  }
+.todaycard::-webkit-scrollbar{
+    scrollbar-width: 0;
+}
+
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+        .todaycard{
+            width: 25vw;
+            margin: 0 1vw 0 1vw;
+           
+        }
+        .imgban{
+            width: 25vw;
+            height: 25vh;
+        }
+        .gameic{
+            width: 6vw;
+        }
+        .topic{
+            margin:3vh 3vw ;
+        }
+    
+  }

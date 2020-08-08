@@ -1,0 +1,33 @@
+.upnextcard{
+    background: white;
+
+    height: 30vh;
+    width: 40vw;
+}
+.upnextcard{
+    background: white;
+    height: fit-content;
+    color: black;
+    width: 80vw;
+    border-radius: 15px;
+    margin:0vw  2vw 0 2vw;
+    display: inline-block;
+    
+    padding:  1vh;
+    box-shadow: 0px 7px 30px -15px rgba(0,0,0,1);
+    
+}
+.upimg{
+    height: 30vh;
+    width: 80vw;
+}
+.starts{
+    
+    display: block;
+    width: inherit;
+    height: 6vh;
+    font-weight: bold;
+    background: #f6c35a;
+    border-radius: 10px;
+    box-shadow: 0px 7px 30px -15px rgba(0,0,0,0.57);
+}

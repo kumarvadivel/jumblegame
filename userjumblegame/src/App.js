@@ -8,11 +8,12 @@ import {
   Link
 } from "react-router-dom";
 import Navbar from './components/navbar/navbar';
+import Home from './components/home/home';
 
 function App() {
   return (
     <Router>
-      <Route path='/' component={} exact/>
+      <Route path='/' component={Home} exact/>
     </Router>
   );
 }

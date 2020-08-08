@@ -1,0 +1,32 @@
+.nextimg{
+    height: 5vh;
+    width: 8vh;
+    mix-blend-mode:color-dodge;
+    
+   
+}
+.uptop{
+    padding: 5vh 6vw;
+    padding-right: 0;
+}
+.tit{
+    padding: 1vh;
+    font-weight: bolder;
+}
+.scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+}
+.scrolling-wrapper {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .nj{
+      padding-top: 2vh;
+      margin-left: -5vw;
+      padding-right: 0;
+  }
