@@ -9,7 +9,7 @@ export default function Pastgames(){
             <img className="imgpa" src="https://i.ibb.co/K9fpMLn/pngwave.png" alt="pngwave" border="0"/>
             <span className="tit lk">Past Games</span>
             </div>
-            <div className="scrolling-wrapper  ok">
+            <div className="scrolling-wrapper nj  ok">
                    <Pastgamecard/>
                    <Pastgamecard/>
                    <Pastgamecard/>
