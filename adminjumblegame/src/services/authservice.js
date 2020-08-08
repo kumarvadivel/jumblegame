@@ -5,6 +5,6 @@ export default {
         return fetch('/api/verify').then(res=>res.json()).then(data =>data)
     },
     logout :() =>{
-        return fetch('api/logout').then(res=>res.json()).then(data=> data)
+        return fetch('/api/logout').then(res=>res.json()).then(data=> data)
     }
 }

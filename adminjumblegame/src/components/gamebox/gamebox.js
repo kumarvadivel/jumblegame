@@ -15,8 +15,8 @@ export default function Gamebox(props){
                 <span className="kas">{props.game.Description}</span>
             </div>
             <div className="flexcol be">
-                <span><strong>Start time:</strong>{props.game.start_time.substr(0,10)} &nbsp; {props.game.start_time.substr(11)}</span>
-                <span className="loc"><strong>End time:</strong>{props.game.end_time.substr(0,10)} &nbsp; {props.game.end_time.substr(11)}</span>
+                <span><strong>Start time:</strong>{new Date(props.game.start_time*1000).toLocaleString()} </span>
+                <span className="loc"><strong>End time:</strong>{new Date(props.game.end_time*1000).toLocaleString()} </span>
             </div>
             <div className="flexcol be">
                 <span><strong>No of Questions:</strong>{props.game.questions.length}</span>

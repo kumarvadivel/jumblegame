@@ -2,7 +2,7 @@ import React from 'react';
 
 export default{
     addgame: (data) =>{
-        return fetch('api/addgame',{
+        return fetch('http://localhost:5001/api/addgame',{
             method:"post",
             body:JSON.stringify(data),
             headers : {
@@ -11,7 +11,7 @@ export default{
         }).then(res=>res.json()).then(data=>data)
     },
     getgames: ()=>{
-        return fetch('api/getgames').then(res=>res.json()).then(data=>data)
+        return fetch('http://localhost:5001/api/getgames').then(res=>res.json()).then(data=>data)
     },
     getgame:(data)=>{
         return fetch('http://localhost:5001/api/getgame/'+data).then(res=>res.json()).then(data=>data)

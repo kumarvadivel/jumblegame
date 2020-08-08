@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../todaygamecard/todaygamecard.css';
 
-export default function Todaygamecard(){
+export default function Todaygamecard(props){
     return(
         <div className="todaycard flexcol">
             <div className="topicarea flexrow">
@@ -10,7 +10,7 @@ export default function Todaygamecard(){
                 <span className="topic">Today's game</span>
             </div>
             <div className="imgarea">
-                <img className="imgban" src="https://adn-static1.nykaa.com/media/wysiwyg/2019/gamezone//brandlogos/Nykaa.png"/>
+                <img className="imgban" src={props.game.Game_image}/>
             </div>
             <div className="startarea">
                 <div className="tim flexcol">

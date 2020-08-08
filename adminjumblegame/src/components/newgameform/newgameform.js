@@ -28,6 +28,8 @@ export default function Newgameform(props){
  
     const ongameSubmit = (data,e) => {
         console.log(data);
+       data.start_time=Date.parse(data.start_time)/1000
+       data.end_time=Date.parse(data.end_time)/1000
         data["questions"]=question
         data["creatoremail"]=props.user.currentuser.email
         console.log(data)

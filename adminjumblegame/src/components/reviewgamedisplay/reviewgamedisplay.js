@@ -30,8 +30,8 @@ export default function Reviewgamedisplay(props){
                          <span className=" loc">{game[0].Description}</span>
                        </div>
                        <div className="flexcol be qwe">
-                       <span><strong>Start time:</strong>{game[0].start_time.substr(0,10)} &nbsp; {game[0].start_time.substr(11)}</span>
-                    <span className="loc"><strong>End time:</strong>{game[0].end_time.substr(0,10)} &nbsp; {game[0].end_time.substr(11)}</span>
+                       <span><strong>Start time:</strong>{new Date(game[0].start_time).toLocaleString()} </span>
+                    <span className="loc"><strong>End time:</strong>{new Date(game[0].end_time).toLocaleString()} &nbsp; </span>
             
                        </div>
                        <div className="flexcol be qwe">
