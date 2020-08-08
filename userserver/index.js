@@ -7,7 +7,7 @@ const mongoose =require('mongoose');
 
 const port=5000
 const corsoption={
-    origin:'http://localhost:3000',
+    origin:['http://localhost:3000',"http://192.168.43.239:3000"],
     optionSuccessStatus:200,
     allowedHeaders:['Content-Type', 'Authorization'],
     credentials: true
