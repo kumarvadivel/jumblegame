@@ -1,15 +1,19 @@
 import React from 'react';
 import "../greet/greet.css";
 import Todaygames from '../todaygames/todaygames';
+import {Link,Redirect} from 'react-router-dom'
 
-export default function  Greet(){
+export default function  Greet(props){
+    function red(){
+        return <Redirect to="/"></Redirect>
+    }
     return(
         <>
         <img className="confetti" src="https://i.ibb.co/CwJFC8W/confetti-3-x.png" alt="confetti-3-x" border="0"/>
         <div className="greetarea flexcol">
             <div className="flexrow toparea">
           
-                <i className="fa fa-arrow-circle-left backbut"></i>
+              {props.setcross?<> <i onClick={red} className="fa fa-close backbut"></i> </>: <i className="fa fa-arrow-circle-left backbut"></i>}
 
                 <div className="achievements">
                     <div className="dataara flexrow">

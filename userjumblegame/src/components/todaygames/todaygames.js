@@ -20,7 +20,7 @@ export default function Todaygames(){
     return(
         <>
         <div className="scrolling-wrapper ">
-            {game.length===0? "":game.map(g=><Todaygamecard game={g}/>)}
+            {game.length===0? "":game.map(g=><><Todaygamecard game={g}/></>)}
         </div>
         </>
 

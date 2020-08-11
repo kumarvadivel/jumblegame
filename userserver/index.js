@@ -5,7 +5,7 @@ const cookieParser=require('cookie-parser')
 const mongoose =require('mongoose');
 
 
-const port=5000
+const port=8080
 const corsoption={
     origin:['http://localhost:3000',"http://192.168.43.239:3000"],
     optionSuccessStatus:200,

@@ -7,13 +7,20 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { AnimatedSwitch,spring } from 'react-router-transition';
 import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
+import Rulesarea from './components/rulesarea/rulesarea';
+import Gamearea from './components/gamearea/gamearea';
 
 function App() {
   return (
     <Router>
+      
       <Route path='/' component={Home} exact/>
+      <Route path='/startgame/:id' component={Rulesarea} exact />
+      <Route path='/game/:id/:qno' component={Gamearea} exact />
+      
     </Router>
   );
 }

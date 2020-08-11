@@ -1,0 +1,33 @@
+.rule{
+    margin-left: 0vw;
+    z-index: -1;
+    width: 100vw;
+    
+}
+.des{
+    position: fixed;
+    z-index: 0;
+    top: 90vh;
+    width: 98vw;
+    height: 8vh;
+    background: white;
+    padding: 1vh;
+    box-shadow: 0px 7px 30px -15px rgba(0,0,0,1);
+}
+.iot{
+    width: 96vw;
+    height: inherit;
+    background: #f62779;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+}
+.jju{
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 0vh;
+    padding-left: 5vw;
+    width: 95vw;
+    overflow-x: hidden;
+}

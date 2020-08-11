@@ -1,8 +1,13 @@
 import React from 'react';
 
 import '../todaygamecard/todaygamecard.css';
-
+import Countdown from "react-countdown";
 export default function Todaygamecard(props){
+
+    function startgame(event){
+        event.preventDefault()
+        window.location.href="startgame/"+props.game._id
+    }
     return(
         <div className="todaycard flexcol">
             <div className="topicarea flexrow">
@@ -14,8 +19,15 @@ export default function Todaygamecard(props){
             </div>
             <div className="startarea">
                 <div className="tim flexcol">
-                    <span className="vg">Game Ends in 22h 33m 55s</span>
-                    <button className="playnow">PLAY NOW</button>
+                <Countdown
+                        date={props.game.end_time*1000}
+                        
+                        intervalDelay={1000}
+                        precision={3}
+                        renderer={(props) => <span className="vg">Game Ends in {props.days}d {props.hours}h {props.minutes}m {props.seconds}s</span>}
+                    />
+                    
+                    <button onClick={startgame} className="playnow">PLAY NOW</button>
                 </div>
             </div>
         </div>

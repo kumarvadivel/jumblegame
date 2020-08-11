@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import '../pastgames/pastgames.css';
 import Upnextcard from '../upnextcard/upnextcard';
 import Pastgamecard from '../pastgamecard/pastgamecard';
+import gameservice from '../../service/gameservice';
 export default function Pastgames(){
+    const [game,setgame]=useState([])
+    useEffect(() => {
+        gameservice.pastgame().then(data=>setgame(data))
+       
+    }, [])
     return(
         <div className="pastg flexcol">
             <div className=" flexrow">
@@ -10,9 +16,7 @@ export default function Pastgames(){
             <span className="tit lk">Past Games</span>
             </div>
             <div className="scrolling-wrapper nj  ok">
-                   <Pastgamecard/>
-                   <Pastgamecard/>
-                   <Pastgamecard/>
+               {game.length===0?"":game.map(g=><Pastgamecard game={g}/>)}
                    
 
 

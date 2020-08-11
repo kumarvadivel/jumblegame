@@ -1,0 +1,35 @@
+.rulesarea{
+   padding: 6vw;
+}
+.rule{
+    height: -moz-fit-content;
+    height: fit-content;
+    background: rgba(5,1,17,1);
+    background: -webkit-gradient(left top, left bottom, color-stop(59%, rgba(5,1,17,1)), color-stop(63%, rgba(5,1,17,1)), color-stop(80%, rgba(107,1,113,1)), color-stop(100%, rgba(227,0,227,1)));
+    background: linear-gradient(to bottom, rgb(1, 1, 6) 59%, rgba(5,1,17,1) 63%, rgba(107,1,113,1) 80%, rgba(227,0,227,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0501', endColorstr='#e300e3', GradientType=0 );
+}
+.rulebox{
+    height: fit-content;
+    background: white;
+    width: 83vw;
+    border-radius: 10px;
+    font-size: smaller;
+}
+.htp{
+    padding: 3vh;
+}
+.ktk{
+    margin-left: 34vw;
+}
+.fe{
+    margin-left: 22vw;
+}
+.su{
+    padding-top: 1vw;
+    font-size: x-small;
+    color: rgb(160, 152, 152);
+}
+strong{
+    font-size: large;
+}

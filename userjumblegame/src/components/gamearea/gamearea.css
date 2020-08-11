@@ -1,0 +1,116 @@
+.gamearea{
+    padding: 3vh;
+    padding-bottom: 0;
+    z-index: -1;
+    color: white;
+    align-items: center;
+}
+.loiu{
+    padding: 1vh 2vw;
+    align-items: center;
+
+}
+.kj{
+    font-size: xx-large;
+}
+.jet{
+    padding: 0 0 01vh 9vw;
+    font-size: x-large;
+}
+.timerem{
+    width: 30vw;
+    height: 3vh;
+    background: #f6c35a;
+    margin-left: 28vw;
+    border-radius: 10px;
+    color: black;
+    padding: 1vw;
+}
+.poi{
+    height: 2vh;
+}
+.ge{
+    font-size: 12px;
+}
+.qwa{
+    
+}
+.fdsa{
+    padding-top: 2vh;
+    padding-left: 1vh;
+}
+.wes{
+    height: 30vh;
+    width: inherit;
+}
+.quesimgar{
+    padding:3vw
+}
+.filling{
+    padding: 4vh;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+.letbox{
+    height: 5vh;
+    width: 5vh;
+    background: #dadada;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    margin-right: 3vw;
+    border-radius: 10px;
+}
+.answerlayer{
+    height: fit-content;
+    width: inherit;
+    background: white;
+}
+.answe{
+    border:1px solid blue
+}
+
+.staticarea{
+    position: fixed;
+    top: 73vh;
+    width: 93vw;
+    padding: 2vh;
+    align-items: center;
+    height: fit-content;
+    background: white;
+}
+.jhw{
+    width: 45%;
+    height: 6vh;
+    margin-right: 1vh;
+    border: 1px solid #ff002d;
+    border-radius: 10px;
+    color: #ff002d;
+    background: white;
+    font-weight: 900;
+}
+.butareas{
+    width: inherit;
+    height: 9vh;
+    text-align: center;
+}
+.inp{
+    background: white;
+    border: 1px solid #8b03d0;
+    padding: 2vh;
+    color: #17141d;
+    width: 20vw;
+}
+.aop{
+    padding-left: 0;
+}
+.yts{
+    align-items: center;
+}
+.ghy{
+    width: 44vw;
+    border-radius: 10px;
+}
+.ghe{
+    margin-top: 4vh;
+}

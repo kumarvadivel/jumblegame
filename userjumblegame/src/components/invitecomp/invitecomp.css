@@ -1,0 +1,25 @@
+.invitearea{
+    padding: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 14vh;
+}
+.invite{
+    background: white;
+    height: fit-content;
+    border-radius: 10px;
+    width: 83vw;
+    padding: 1vh;
+}
+.jg{
+    height: 50px;
+    margin-left: 28vw;
+}
+.qwt{
+    margin-left: 3vw;
+}
+.hy{
+    width: 80vw;
+}
+.uj{
+    padding: 3vw;
+}
