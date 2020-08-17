@@ -1,6 +1,7 @@
 .imgpa{
     height: 8vh;
-    width: 15vw;
+    width: 12vw;
+    padding-left: 4vw;
 }
 .pastg{
     padding: 1.5vh;
@@ -13,3 +14,18 @@
     padding-left: 2vh;
     padding-right: 0;
 }
+
+
+@media screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .imgpa{
+        width: 8vw;
+    }
+    .ok {
+        padding-left: 5vh;
+        padding-right: 0;
+    }
+  }

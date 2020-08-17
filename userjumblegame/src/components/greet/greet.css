@@ -55,29 +55,64 @@
     z-index: 0;
 }
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
+  and (min-device-width: 900px) 
+  and (max-device-width: 1920px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 
     .achievements{
-        width: 17%;
+        width: 42%;
     }
-    .backbut{
-        padding-right: 75vw;
+    .backbut {
+        padding-right: 18vw;
     }
     .log{
         height: 15vh;
     }
     .rew{
         margin-top: -4vh;
-        margin-left: 41vw;
+        margin-left: 10vw;
         mix-blend-mode: hard-light;
         opacity: 100%;
         width: 18vw;
         z-index: 0;
     }
     .confetti{
-       visibility: hidden;
+       width: 40%;
+    }
+    .greetarea{
+        width: inherit;
+    }
+    .toparea {
+        padding: 4vh 2vw;
+        padding-right: 0;
     }
   
 }
+@media screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .confetti{
+        width: 60%;
+    }
+    .backbut{
+        padding-right: 33vw;
+    }
+    .pad1 {
+        padding-left: 2vw;
+    }
+    .rew {
+        margin-top: -4vh;
+        margin-left: 15vw;
+        mix-blend-mode: hard-light;
+        opacity: 100%;
+        width: 30vw;
+        z-index: 0;
+    }
+    .toparea {
+        padding: 4vh 3vw;
+        padding-right: 0;
+    }
+  }
+ 

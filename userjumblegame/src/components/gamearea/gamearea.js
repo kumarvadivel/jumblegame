@@ -124,6 +124,7 @@ export default function Gamearea(){
 
         }
         gameservice.addwinner(body).then(data=>{
+            console.log(data)
             if(data.msg){
                 endgame()
                 history.push('/')

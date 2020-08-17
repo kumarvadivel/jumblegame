@@ -1,11 +1,12 @@
 import React from 'react';
 import "../greet/greet.css";
 import Todaygames from '../todaygames/todaygames';
-import {Link,Redirect} from 'react-router-dom'
+import {Link,useHistory} from 'react-router-dom'
 
 export default function  Greet(props){
+    const history=useHistory()
     function red(){
-        return <Redirect to="/"></Redirect>
+        history.push('/')
     }
     return(
         <>
@@ -13,7 +14,7 @@ export default function  Greet(props){
         <div className="greetarea flexcol">
             <div className="flexrow toparea">
           
-              {props.setcross?<> <i onClick={red} className="fa fa-close backbut"></i> </>: <i className="fa fa-arrow-circle-left backbut"></i>}
+              {props.setcross?<> <i onClick={red} style={{color:"white"}} className="fa fa-close backbut"></i> </>: <i style={{color:"white"}} onClick={red} className="fa fa-arrow-circle-left backbut"></i>}
 
                 <div className="achievements">
                     <div className="dataara flexrow">

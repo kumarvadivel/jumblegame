@@ -4,7 +4,9 @@ var jwtDecode = require('jwt-decode');
 userrouter.get('/login/:token',(req,res)=>{
     let token=req.params.token
     var decoded=jwtDecode(token)
-    res.cookie("token",token)
+    res.cookie("token",token,{
+        sameSite:"none"
+    })
     
     if(decoded.email_verified){
         res.status(200).json({loginstatus:true})

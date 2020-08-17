@@ -3,7 +3,8 @@ var cors = require('cors')
 const app = express();
 const cookieParser=require('cookie-parser')
 const mongoose =require('mongoose');
-
+const session=require('express-session');
+const mongodbsession = require('connect-mongodb-session')(session)
 
 const port=8080
 const corsoption={
@@ -12,16 +13,31 @@ const corsoption={
     allowedHeaders:['Content-Type', 'Authorization'],
     credentials: true
 }
+const store= new mongodbsession({
+    uri:"mongodb+srv://kumar:1721175@cluster0.lxafx.mongodb.net/nykaa?retryWrites=true&w=majority",
+    collection:"sessions",
+    expires:1000*60*60*24*30
+})
 app.use(cors(corsoption))
 app.use(cookieParser())
 app.use(express.json())
 
 
-mongoose.connect('mongodb://localhost:27017/nykaagamezone',{useNewUrlParser:true,useUnifiedTopology:true},()=>{
+app.sessionMiddleware = session({
+    secret:'acid',
+    resave:false,
+    saveUninitialized:false,
+    store:store
+})
+
+ app.use(app.sessionMiddleware)
+
+mongoose.connect('mongodb+srv://kumar:1721175@cluster0.lxafx.mongodb.net/nykaa?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology:true},()=>{
     console.log('successfully connected to database')
 })
 const gamerouter= require('./routes/gameroutes.js')
 app.use('/api',gamerouter)
+
 app.listen(port,()=>{
     console.log('express server started');
 });

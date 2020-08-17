@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 
-mongoose.connect('mongodb://localhost:27017/nykaagamezone',{useNewUrlParser:true,useUnifiedTopology:true},()=>{
+mongoose.connect('mongodb+srv://kumar:1721175@cluster0.lxafx.mongodb.net/nykaa?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology:true},()=>{
     console.log('successfully connected to database')
 })
 const userrouter= require('./routes/userroutes.js')

@@ -97,9 +97,9 @@ export default function Newgameform(props){
                     <input type="text" className="inp" placeholder="Question" name="question" ref={questions({required: true, maxLength: 80})} />
                     
                     <div className="flexrow"><label>Question Banner link</label><span className="err"> *{qerrors.question_banner && "This is required"}</span></div>
-                    <input type="text" className="inp" placeholder="Banner image link" name="question_banner" ref={questions({required: true, maxLength: 100})} />
+                    <input type="text" className="inp" placeholder="Banner image link" name="question_banner" ref={questions({required: true, maxLength: 1000000})} />
                     <div className="flexrow"><label>Correct Answer</label><span className="err"> *{qerrors.answer && "This is required"}</span></div>
-                    <input type="text" className="inp" placeholder="Answer" name="answer" ref={questions({required: true, minLength: 6, maxLength: 1200})} />
+                    <input type="text" className="inp" placeholder="Answer" name="answer" ref={questions({required: true, minLength: 0, maxLength: 1200})} />
                     
                     <input type="submit" className="butt lo" value="Add Questions" />
                     </form>

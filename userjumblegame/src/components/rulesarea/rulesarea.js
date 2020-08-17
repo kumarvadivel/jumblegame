@@ -17,6 +17,8 @@ export default function Rulesarea(){
     },[])
    
  const handleClick=(qlength,gr1,gr2,gn,qt)=>()=>{
+     
+     gameservice.gamestart(id).then(data=>console.log(data))
       console.log(qlength)
         setstart(true)
        localStorage.setItem("question_length",qlength)
@@ -26,9 +28,11 @@ export default function Rulesarea(){
       localStorage.setItem("game_name",gn)
       localStorage.setItem("question_time",qt)
       localStorage.setItem("temp_time",qt)
+     
       
         setTimeout(() => {
             localStorage.setItem("start",Math.round(Date.now()/1000))
+            
             window.location.href="/game/"+id+"/"+localStorage.getItem("current_question")
         }, 5000);
     }
@@ -39,7 +43,7 @@ export default function Rulesarea(){
            
             <div className="rule">
                
-                <Greet setcross={true}></Greet>
+                <Greet setcross={false}></Greet>
                 {game.length==0?"":game.map(g=>(
                         <>
                         <Pastgamescard game={g}/>

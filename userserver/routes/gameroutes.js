@@ -2,6 +2,9 @@ const express=require('express')
 const gamerouter=express.Router();
 const game=require('../models/gamemodel')
 const winner=require('../models/winner')
+var session= require('express-session')
+
+
 
 
 gamerouter.get('/pastgames',(req,res)=>{
@@ -67,17 +70,60 @@ gamerouter.post('/verify',(req,res)=>{
 gamerouter.post("/addwinner",(req,res)=>{
     var data=req.body
     var win = new winner(data)
+    if(!req.session.gamesplayed){
+        req.session.gamesplayed=[]
+        req.session.gamesplayed.push(data)
+    }else{
+        req.session.gamesplayed.push(data)
+    }
+      //  console.log("session empty")
+        
+        
+        req.session.save();
+
+    
     win.save(err=>{
         if(err)
         res.status(500).json({message : {msgBody : "Error has occured", msgError: true}});
         else{
           return res.status(200).json({
               msg:"winner added successfully",
-              status:true
+              status:true,
+              ses_data:req.session.gamesplayed
           })
         }
     })
    
 
+})
+
+
+gamerouter.get('/',(req,res)=>{
+   
+    req.session.createdat=new Date()
+   
+    req.session.save()
+    res.json({msg:req.session,session:req.sessionID})
+})
+gamerouter.get('/startgame/:id',(req,res)=>{
+    if(!req.session.gameattempts){
+       let attempts={
+           gameid:req.params.id,
+           attempts:1
+       }
+       req.session.gameattempts=[]
+       req.session.gameattempts.push(attempts)
+       req.session.save()
+    }else{
+        if(req.session.gameattempts.some(p=>p.gameid==req.params.id)){
+          let index=  req.session.gameattempts.findIndex(p=>p.gameid==req.params.id)
+          let data=req.session.gameattempts[index]
+          data.attempts=data.attempts+1
+          req.session.gameattempts.splice(index,1,data)
+            req.session.save()
+
+        }
+    }
+    res.json({msg:req.session})
 })
 module.exports=gamerouter
