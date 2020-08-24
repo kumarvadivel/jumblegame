@@ -1,5 +1,5 @@
 .invitearea{
-    padding: 5vw;
+    padding: 1vw;
     padding-top: 1vh;
     padding-bottom: 14vh;
 }
@@ -7,19 +7,51 @@
     background: white;
     height: fit-content;
     border-radius: 10px;
-    width: 83vw;
+    
     padding: 1vh;
 }
 .jg{
     height: 50px;
-    margin-left: 28vw;
+   
 }
 .qwt{
-    margin-left: 3vw;
+    margin-left: 1vh;
 }
 .hy{
     width: 80vw;
 }
 .uj{
-    padding: 3vw;
+    padding: 1vw 0;
+}
+
+.hjrt{
+    width: 80%;
+    text-align: start;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width:520px) {
+.invite {
+    background: white;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 1vh;
+    width: -webkit-fill-available;
+    margin: 3vw;
+}
+.hy{
+    width: fill;
+}
+.des {
+    position: fixed;
+    z-index: 0;
+    top: 90vh;
+    width: inherit;
+    height: 8vh;
+    background: white;
+    padding: 1vh;
+    box-shadow: 0px 7px 30px -15px rgba(0,0,0,1);
+}
 }

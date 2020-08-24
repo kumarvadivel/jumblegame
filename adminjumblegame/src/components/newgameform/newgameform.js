@@ -48,8 +48,9 @@ export default function Newgameform(props){
     }
     const onquestionsubmit = (data,e) => {
         e.preventDefault()
-        
+        data.answer=data.answer.replace(/\s/g, '~')
         data["shuffled_answer"] = data.answer.split('').sort(()=>(Math.random()-0.5)).join('');
+        data["shuffled_answer"] =data["shuffled_answer"].replace("~","")
         //console.log(data)
         setquestion(question.concat(data));
         console.log(question)

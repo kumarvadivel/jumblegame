@@ -14,7 +14,8 @@ const corsoption={
     credentials: true
 }
 const store= new mongodbsession({
-    uri:"mongodb+srv://kumar:1721175@cluster0.lxafx.mongodb.net/nykaa?retryWrites=true&w=majority",
+   uri:"mongodb+srv://kumar:1721175@cluster0.lxafx.mongodb.net/nykaa?retryWrites=true&w=majority",
+   
     collection:"sessions",
     expires:1000*60*60*24*30
 })

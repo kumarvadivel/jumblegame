@@ -17,9 +17,10 @@ export default function Login(props){
        //console.log(response.profileObj)
       let t=response.tokenId
       console.log(t)
-      fetch("http://ec2-13-58-164-64.us-east-2.compute.amazonaws.com:5001/api/login/"+t,{credentials:'include'})
+      fetch("http://localhost:5001/api/login/"+t,{credentials:"include"})
       .then(res=>res.json())
       .then(data=>{
+          console.log(data)
          if(data.loginstatus){
             window.location.href="/home"
          }

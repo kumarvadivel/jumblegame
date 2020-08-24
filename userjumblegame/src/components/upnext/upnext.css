@@ -5,8 +5,8 @@
     
    
 }
-.uptop{
-    padding: 5vh 6vw;
+.uptop {
+    padding: 3vh 1vw;
     padding-right: 0;
 }
 .tit{
@@ -29,4 +29,10 @@
       padding-top: 2vh;
       margin-left: -5vw;
       padding-right: 0;
+  }
+  .opsd{
+      min-height: 26vh;
+  }
+  .ggfg{
+      margin-top: 7vh;
   }

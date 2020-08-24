@@ -46,7 +46,10 @@ export default function Rulesarea(){
                 <Greet setcross={false}></Greet>
                 {game.length==0?"":game.map(g=>(
                         <>
-                        <Pastgamescard game={g}/>
+                        <div className="upn">
+                        <Pastgamescard  game={g}/>
+                        </div>
+                        
                         <Rulescomp/>
                         <Invitecomp/>  
                         <div className="des">

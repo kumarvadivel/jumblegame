@@ -10,7 +10,7 @@ export default function Invitecomp(){
         <div className="invitearea">
             <div className="invite flexcol">
                 <div className="flexrow">
-                    <div className="flexcol">
+                    <div className="flexcol hjrt">
                         <span className="tit">Invite your friends</span>
                         <span className="su qwt">share link to your friends</span>
                     </div>

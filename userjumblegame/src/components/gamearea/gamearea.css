@@ -1,30 +1,41 @@
 .gamearea{
-    padding: 3vh;
+    padding: 1vh;
     padding-bottom: 0;
     z-index: -1;
     color: white;
     align-items: center;
+    height: fill;
+  
+}
+.kok{
+    padding-left: 5vw;
+}
+.bgr{
+    margin-left: 0vw;
 }
 .loiu{
-    padding: 1vh 2vw;
+    padding: 1vh 1vw;
     align-items: center;
+    width: -webkit-fill-available;
 
 }
 .kj{
-    font-size: xx-large;
-}
-.jet{
-    padding: 0 0 01vh 9vw;
     font-size: x-large;
 }
+.jet{
+    padding: 0 0 01vh 0vw;
+    font-size: large;
+    width: -webkit-fill-available;
+}
 .timerem{
-    width: 30vw;
+    width: inherit;
     height: 3vh;
     background: #f6c35a;
-    margin-left: 28vw;
+    margin-left: 6vw;
     border-radius: 10px;
     color: black;
-    padding: 1vw;
+    padding: 2px;
+    text-align: start;
 }
 .poi{
     height: 2vh;
@@ -40,16 +51,18 @@
     padding-left: 1vh;
 }
 .wes{
-    height: 30vh;
-    width: inherit;
+    height: 20vh;
+    width: 80%;
 }
 .quesimgar{
-    padding:3vw
+    padding: 2vh 0;
 }
 .filling{
     padding: 4vh;
     flex-wrap: wrap;
-    height: 10vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
 }
 .letbox{
     height: 5vh;
@@ -58,8 +71,10 @@
     color: black;
     text-align: center;
     font-size: x-large;
-    margin-right: 3vw;
+    margin-right: 1vw;
+    margin-top: 1vh;
     border-radius: 10px;
+    flex: 0 1 34px;
 }
 .answerlayer{
     height: fit-content;
@@ -70,18 +85,19 @@
     border:1px solid blue
 }
 
-.staticarea{
+.staticarea {
     position: fixed;
-    top: 73vh;
-    width: 93vw;
-    padding: 2vh;
+   bottom:0;
+    width: 400px;
+ 
     align-items: center;
+    height: -moz-fit-content;
     height: fit-content;
     background: white;
 }
 .jhw{
     width: 45%;
-    height: 6vh;
+    height: 7vh;
     margin-right: 1vh;
     border: 1px solid #ff002d;
     border-radius: 10px;
@@ -108,9 +124,23 @@
     align-items: center;
 }
 .ghy{
-    width: 44vw;
+    width: fill;
     border-radius: 10px;
 }
 .ghe{
     margin-top: 4vh;
+}
+.lopk
+{
+    background: #ff002d;
+    color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-width:520px) {
+.staticarea{
+    width: -webkit-fill-available;
+}
+.timerem{
+    margin-left: 28vw;
+}
 }

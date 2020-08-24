@@ -11,8 +11,8 @@ export default function Gamestartcard(props){
     return(
         <>
        
-              <Animate play  duration={0.2} start={{ transform: 'translate(100vw, 0)' }}
-                end={{ transform: 'translate(10px, 10px)' }}>
+              <Animate play  duration={0.3} start={{ transform: 'translate(100vw, 0)' }}
+                end={{ transform: 'translate(-02vw, 0)' }}>
               <div className="startcard flexcol">
                   {props.cardstate==="success"?<span className="tit">Correct<br/></span>:""}
                             <span className="tit">

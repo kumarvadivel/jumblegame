@@ -4,22 +4,22 @@
     height: 30vh;
     width: 40vw;
 }
-.upnextcard{
+.upnextcard {
     background: white;
+    height: -moz-fit-content;
     height: fit-content;
     color: black;
-    width: 80vw;
+    width: -webkit-fill-available;
     border-radius: 15px;
-    margin:0vw  2vw 0 5vw;
+    margin: 0vw 1vw 0 0vw;
     display: inline-block;
-    
-    padding:  1vh;
+    padding: 1vh;
     box-shadow: 0px 7px 30px -15px rgba(0,0,0,1);
-    
 }
 .upimg{
     height: 30vh;
-    width: 80vw;
+    width: -webkit-fill-available;
+    max-width: 23vw;
 }
 .starts{
     
@@ -42,5 +42,19 @@
     .upimg{
         width: inherit;
     }
+
+}
+.upn{
+    margin-left: 1vw;
+}
+.gtr{
+    padding-bottom: 1vh;
+}
+
+@media only screen and (min-width: 320px) and (max-width:520px) {
+
+.upimg{
+    max-width: 91vw;
+}
 
 }

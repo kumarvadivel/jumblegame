@@ -2,9 +2,9 @@
     background: white;
     height: fit-content;
     color: black;
-    width: 85vw;
+    width: -webkit-fill-available;
     border-radius: 15px;
-    margin:0vw  5vw 0 5vw;
+    margin:0vw  1vw 0 1vw;
     display: inline-block;
     padding:  0 10px;
 }
@@ -14,18 +14,20 @@
 
 
   .gameic{
-      width: 20vw;
+      width: 4vw;
   }
   .topic{
       position: relative;
-      margin: 3vh 10vw;
+      margin: auto;
       font-weight: 700;
       font-size: large;
+      margin-left: 4vw;
   }
-  .imgban{
-      width: 85vw;
-      height: 30vh;
-  }
+  .imgban {
+    width: -webkit-fill-available;
+    height: 30vh;
+    max-width: 23vw;
+}
   .startarea{
       padding: 2vh 0;
   }
@@ -104,4 +106,23 @@
 .imgban,.imgarea{
     width: inherit;
 }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width:520px) {
+
+    .imgban {
+        width: -webkit-fill-available;
+        height: 30vh;
+        max-width: 93vw;
+    }
+    .gameic {
+        width: 22vw;
+    }
+    .topic {
+        position: relative;
+        margin: auto;
+        font-weight: 700;
+        font-size: large;
+        margin-left: 13vw;
+    }
   }

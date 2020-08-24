@@ -15,7 +15,7 @@ export default function Rulescomp(){
                 </div>
                 <div className="htp flexrow">
                     <div className="flexcol">
-                    <strong>1. Step1</strong>
+                    <strong className="kyt">1. Step1</strong>
                     <span className="su">This is then description of step1</span>
                 
                     </div>
@@ -24,7 +24,7 @@ export default function Rulescomp(){
                     </div>
                     <div className="htp flexrow">
                     <div className=" flexcol">
-                    <strong>2.Step2</strong>
+                    <strong className="kyt">2.Step2</strong>
                     <span className="su">This is then description of step2</span>
                 
                     </div>

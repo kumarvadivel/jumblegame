@@ -1,5 +1,5 @@
 .rulesarea{
-   padding: 6vw;
+   padding: 2vh;
 }
 .rule{
     height: -moz-fit-content;
@@ -8,11 +8,13 @@
     background: -webkit-gradient(left top, left bottom, color-stop(59%, rgba(5,1,17,1)), color-stop(63%, rgba(5,1,17,1)), color-stop(80%, rgba(107,1,113,1)), color-stop(100%, rgba(227,0,227,1)));
     background: linear-gradient(to bottom, rgb(1, 1, 6) 59%, rgba(5,1,17,1) 63%, rgba(107,1,113,1) 80%, rgba(227,0,227,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0501', endColorstr='#e300e3', GradientType=0 );
+    width: fill;
 }
 .rulebox{
     height: fit-content;
     background: white;
-    width: 83vw;
+   
+    width: -webkit-fill-available;;
     border-radius: 10px;
     font-size: smaller;
 }
@@ -20,16 +22,30 @@
     padding: 3vh;
 }
 .ktk{
-    margin-left: 34vw;
+    margin-left: 10vw;
 }
 .fe{
-    margin-left: 22vw;
+    margin-left: 7vw;
 }
 .su{
-    padding-top: 1vw;
+    padding-top: 1vh;
     font-size: x-small;
     color: rgb(160, 152, 152);
 }
 strong{
     font-size: large;
+}
+.kyt{
+    text-align: start;
+}
+
+@media only screen and (min-width: 320px) and (max-width:520px) {
+
+.ktk {
+    margin-left: 33vw;
+}
+.fe {
+    margin-left: 23vw;
+}
+
 }

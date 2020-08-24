@@ -1,16 +1,19 @@
-.startcard{
-    display: inline-block;
-    position: relative;
-    color: black;
-    background: white;
-    width: 85vw;
-    top:21vh;
-    left: -3vw;
-    height: fit-content;
-    padding: 3vw;
-    border-radius: 10px;
-    text-align: center;
-   
+.startcard {
+  display: inline-block;
+  position: relative;
+  color: black;
+  background: white;
+  width: auto;
+  width: fill;
+  top: 21vh;
+  left: 0vw;
+  max-width: 15vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3vw;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 0vw;
 }
 
 .timer-wrapper {
@@ -40,9 +43,10 @@
     font-size: 16px;
   }
   .ppo{
-    padding-left: 20vw;
+    padding-left: 1vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    text-align:center;
   }
   .lou{
     color: #E91E63;
@@ -50,3 +54,15 @@
     font-size: larger;
     padding-bottom: 1vh;
   }
+
+  @media only screen and (min-device-width: 320px) and (max-width:520px) {
+.ppo{
+  text-align:center;
+  padding-left: 18vw;
+}
+.startcard{
+  margin-left:4vw;
+  max-width: fill;
+}
+  }
+  

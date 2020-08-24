@@ -24,7 +24,7 @@ export default function Todaygamecard(props){
                         
                         intervalDelay={1000}
                         precision={3}
-                        renderer={(props) => <span className="vg">Game Ends in {props.days}d {props.hours}h {props.minutes}m {props.seconds}s</span>}
+                        renderer={(props) => <span className="vg">Game Ends in {props.days===0?null:props.days+"d"} {props.hours}h {props.minutes}m {props.seconds}s</span>}
                     />
                     
                     <button onClick={startgame} className="playnow">PLAY NOW</button>

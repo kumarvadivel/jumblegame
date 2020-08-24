@@ -2,3 +2,15 @@
     display: block;
     text-align: center;
 }
+.imgpa {
+    height: 8vh;
+    width: 4vw;
+}
+
+@media only screen and (min-width: 320px) and (max-width:520px) {
+
+    .imgpa {
+      height: 8vh;
+      width: 13vw;
+  }
+    }
